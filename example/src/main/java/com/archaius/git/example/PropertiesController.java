@@ -1,5 +1,6 @@
 package com.archaius.git.example;
 
+import Model.Properties;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,5 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class PropertiesController {
 
     @RequestMapping("/properties")
+    public Properties getProperties() {
+
+        return new Properties();
+    }
 
 }
